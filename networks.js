@@ -6,29 +6,24 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('f9beb4d9'),
-  addressVersion: 0x00,
-  privKeyVersion: 128,
-  P2SHVersion: 5,
-  hkeyPublicVersion: 0x0488b21e,
-  hkeyPrivateVersion: 0x0488ade4,
+  magic: hex('e8ada3c8'),
+  addressVersion: 0x28,
+  privKeyVersion: 168,
+  P2SHVersion: 100,
+  hkeyPublicVersion: 0x019da462,
+  hkeyPrivateVersion: 0x019d9cfe,
   genesisBlock: {
-    hash: hex('6FE28C0AB6F1B372C1A6A246AE63F74F931E8365E15A089C68D6190000000000'),
-    merkle_root: hex('3BA3EDFD7A7B12B27AC72C3E67768F617FC81BC3888A51323A9FB8AA4B1E5E4A'),
+    hash: hex('25CB096CE859C340FE85E621FC51370A4607EDFF5C86B9E2ABEACA4D02000000'),
+    merkle_root: hex('695355ECC768DD37609F71D53EB251A3CC0BFC87DCE5E574FD230460CE15B99F'),
     height: 0,
-    nonce: 2083236893,
+    nonce: 1757951709,
     version: 1,
-    prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1231006505,
-    bits: 486604799,
+    prev_hash: buffertools.fill(new Buffer(28), 0),
+    timestamp: 1440578000,
+    bits: 487587839,
   },
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
+    'dnsseed.hull-coin.org'
   ],
   defaultClientPort: 7333
 };
@@ -37,25 +32,24 @@ exports.mainnet = exports.livenet;
 
 exports.testnet = {
   name: 'testnet',
-  magic: hex('0b110907'),
-  addressVersion: 0x6f,
-  privKeyVersion: 239,
-  P2SHVersion: 196,
-  hkeyPublicVersion: 0x043587cf,
-  hkeyPrivateVersion: 0x04358394,
+  magic: hex('fa00f8f6'),
+  addressVersion: 0x41,
+  privKeyVersion: 193,
+  P2SHVersion: 127,
+  hkeyPublicVersion: 0x0436f6e1,
+  hkeyPrivateVersion: 0x0436ef7d,
   genesisBlock: {
-    hash: hex('43497FD7F826957108F4A30FD9CEC3AEBA79972084E90EAD01EA330900000000'),
-    merkle_root: hex('3BA3EDFD7A7B12B27AC72C3E67768F617FC81BC3888A51323A9FB8AA4B1E5E4A'),
+    hash: hex('012ddb919294a6318b6a787bcbec3707184562ee0262f7d7cd0a6dac00000000'),
+    merkle_root: hex('695355ECC768DD37609F71D53EB251A3CC0BFC87DCE5E574FD230460CE15B99F'),
     height: 0,
     nonce: 414098458,
     version: 1,
-    prev_hash: buffertools.fill(new Buffer(32), 0),
+    prev_hash: buffertools.fill(new Buffer(28), 0),
     timestamp: 1296688602,
-    bits: 486604799,
+    bits: 487587839,
   },
   dnsSeeds: [
-    'testnet-seed.bitcoin.petertodd.org',
-    'testnet-seed.bluematt.me'
+    'testnet-seed.hull-coin.org'
   ],
   defaultClientPort: 17333
 };
