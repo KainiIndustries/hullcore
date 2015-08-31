@@ -114,7 +114,7 @@ var dns = require('dns');
 // get a peer from dns seed
 dns.resolve('dnsseed.bluematt.me', function(err, seeds) {
   // use the first peer
-  var peer = new Peer(seeds[0], 8333);
+  var peer = new Peer(seeds[0], 7333);
 
   //Custom peer:
   //var peer = new Peer('180.153.139.246', '8888');
@@ -788,7 +788,7 @@ var run = function() {
   var config = {
     networkName: 'testnet',
     host: 'localhost',
-    port: 18333
+    port: 17333
   };
 
 
@@ -906,7 +906,7 @@ var run = function() {
     network: 'testnet'
   });
 
-  peerman.addPeer(new Peer('127.0.0.1', 18333));
+  peerman.addPeer(new Peer('127.0.0.1', 17333));
 
   peerman.on('connection', function(conn) {
     conn.on('inv', handleInv);
@@ -1112,7 +1112,7 @@ var run = function() {
   var peerman = new PeerManager({
     network: 'testnet'
   });
-  peerman.addPeer(new Peer('127.0.0.1', 18333));
+  peerman.addPeer(new Peer('127.0.0.1', 17333));
 
   peerman.on('connect', function() {
     var conn = peerman.getActiveConnection();
@@ -1198,7 +1198,7 @@ var bitcore = require('../');
 var Peer = bitcore.Peer,
   Connection = bitcore.Connection;
 
-var peer = new Peer('127.0.0.1', 8333);
+var peer = new Peer('127.0.0.1', 7333);
 
 var socket = peer.createConnection();
 

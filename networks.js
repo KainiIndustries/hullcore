@@ -30,7 +30,7 @@ exports.livenet = {
     'seed.bitnodes.io',
     'bitseed.xf2.org'
   ],
-  defaultClientPort: 8333
+  defaultClientPort: 7333
 };
 
 exports.mainnet = exports.livenet;
@@ -57,5 +57,5 @@ exports.testnet = {
     'testnet-seed.bitcoin.petertodd.org',
     'testnet-seed.bluematt.me'
   ],
-  defaultClientPort: 18333
+  defaultClientPort: 17333
 };

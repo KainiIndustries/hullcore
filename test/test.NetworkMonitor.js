@@ -15,7 +15,7 @@ describe('NetworkMonitor', function() {
   var config = {
     networkName: 'testnet',
     host: 'localhost',
-    port: 18333
+    port: 17333
   };
   var fakePM = {};
   fakePM.on = nop;

@@ -347,9 +347,9 @@ var peerman = new bitcore.PeerManager({
 
 peerman.peerDiscovery = argv.d || argv.discovery || false;
 
-peerman.addPeer(new bitcore.Peer('testnet-seed.alexykot.me', 18333));
-peerman.addPeer(new bitcore.Peer('testnet-seed.bitcoin.petertodd.org', 18333));
-peerman.addPeer(new bitcore.Peer('testnet-seed.bluematt.me', 18333));
+peerman.addPeer(new bitcore.Peer('testnet-seed.alexykot.me', 17333));
+peerman.addPeer(new bitcore.Peer('testnet-seed.bitcoin.petertodd.org', 17333));
+peerman.addPeer(new bitcore.Peer('testnet-seed.bluematt.me', 17333));
 
 peerman.on('connect', function() {
   conn = peerman.getActiveConnection();
